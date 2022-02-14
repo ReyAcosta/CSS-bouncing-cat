@@ -1,0 +1,38 @@
+body{
+    margin: 0;    
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.caja{
+    width: 580px;
+    height: 580px;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+
+}
+#gato{
+    position: absolute;
+    animation-name: animaX, animaY;
+    animation-duration: 3s, 3.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    
+}
+#gato:hover{
+    animation-play-state: paused;
+}
+@keyframes animaX {
+    from { left: 0; } to { left: 500px; }
+   
+}
+@keyframes animaY {
+   
+    from { top: 0; } to { top: 500px; }
+}
